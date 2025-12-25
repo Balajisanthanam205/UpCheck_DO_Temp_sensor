@@ -211,11 +211,54 @@ First go with either hot or cold water dip the DO sensor prob in that cup of wat
 
 
 **As a result of Two-point calibration we got 4-Values**   
-	• HIGH TEMP - 34.   
+
+	• HIGH TEMP - 34 deg C.   
 	• VOLTAGE VALUE - 751 (mV).   
-	• LOW TEMP - 14. 
+	• LOW TEMP - 14 deg C. 	
 	• VOLTAGE VALUE - 463 (mV).   
 
+**Step 6:** Testing and verification of the DO sensor.
+
+After completing the calibration we getting the 4 values, now just replace the value we in the actual code for DO sensing.
+
+**Place where we need to replace the values:**	
+
+	// CAL1 High temperature point, CAL2 Low temperature point
+	#define CAL1_V (751) // mv
+	#define CAL1_T (34)  // ℃
+	
+	#define CAL2_V (463) // mv
+	#define CAL2_T (14)  // ℃
+
+**We can verify the sensor by two ways:**   
+		• First with high DO state (use air pump/mixer aerate the distilled water for 10 to 20 min).   
+		• Second with zero DO state (use NaSo3 chemical – dissolve 0.2 grams for 100ml of water which will consume all the oxygen in the water) wait for 3 to 5 min before you take the readings.
+		[Code for Verification (Arduino UNO).](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/Calibration%20Code%20for%20DO%20sensor%20(UNO))
+follow the **Step 4** for Pin configuration.	
+
+
+**Output for this Aerated state:**
+
+	
+	Temperaturet:	26	ADC RAW:	115	ADC Voltage:	561	DO:	7164	
+	Temperaturet:	26	ADC RAW:	114	ADC Voltage:	556	DO:	7101	
+	Temperaturet:	26	ADC RAW:	114	ADC Voltage:	556	DO:	7101	
+	Temperaturet:	26	ADC RAW:	113	ADC Voltage:	551	DO:	7037	
+	Temperaturet:	26	ADC RAW:	113	ADC Voltage:	551	DO:	7037	
+	Temperaturet:	26	ADC RAW:	112	ADC Voltage:	546	DO:	6973	
+	Temperaturet:	26	ADC RAW:	112	ADC Voltage:	546	DO:	6973	
+	Temperaturet:	26	ADC RAW:	112	ADC Voltage:	546	DO:	6973	
+	Temperaturet:	26	ADC RAW:	112	ADC Voltage:	546	DO:	6973	
+	Temperaturet:	26	ADC RAW:	111	ADC Voltage:	541	DO:	6909	
+	Temperaturet:	26	ADC RAW:	112	ADC Voltage:	546	DO:	6973	
+	Temperaturet:	26	ADC RAW:	111	ADC Voltage:	541	DO:	6909
+**Output for this deaerated state:**
+
+	Temperaturet:	26	ADC RAW:	0	ADC Voltage:	0	DO:	0	
+	Temperaturet:	26	ADC RAW:	0	ADC Voltage:	0	DO:	0	
+	Temperaturet:	26	ADC RAW:	0	ADC Voltage:	0	DO:	0
+
+It is showing the DO normaly we need to divide it by 1000 to get the DO value in **(mg/L).**
 
 
 
