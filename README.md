@@ -60,7 +60,7 @@ Setup the Temperature sensor (DS18B20) with Microcontroller (esp32).
 	• GND pin – ground cable (Black colour).   
 This Temperature sensor will only work with the help of pull up resistor (4.7K) in between 3.3V and D4 pins as shown in the picture.
 
-![Temp sensor circute](https://github.com/user-attachments/assets/366887ef-cf3a-4381-a87c-2738fa362c51)  **Fig No.03: Temperature Sensor Circute with (4.7K) resistor in ESP32.**
+![Temp sensor circute](https://github.com/user-attachments/assets/366887ef-cf3a-4381-a87c-2738fa362c51) 	 **Fig No.03: Temperature Sensor Circute with (4.7K) resistor in ESP32.**
 
 This is to measure the Water temperature.
 	
@@ -90,7 +90,7 @@ Next remove the head of the Probe in the DO sensor with care don’t damage the 
 And fill the NaOH solution in that head and screw It back in the prob and clean the outside with the distilled water to get rid of the over flowed NaOH solution and make it dry with tissue paper (don’t touch the tip of the prob).
 
 
-<img width="1057" height="640" alt="prob prepration" src="https://github.com/user-attachments/assets/c45fb067-e7a3-4e59-9b29-5e93f8f1c7d0" /> Fig No.04:Probe Prepration.
+<img width="1057" height="640" alt="prob prepration" src="https://github.com/user-attachments/assets/c45fb067-e7a3-4e59-9b29-5e93f8f1c7d0" /> 	Fig No.04:Probe Prepration.
 
 Make sure there is no bubble or air pockets in that solution when you close that head.
 
@@ -104,9 +104,9 @@ Make sure there is no bubble or air pockets in that solution when you close that
 
 This DO sensor need min of 5V for proper working and 5.5V in the max limit (handle 3.3 V to 5.5 V) refer the pictures for move understanding.
 
-![Arduno UNO set up for DO sensor](https://github.com/user-attachments/assets/ec41b42f-2d30-48c6-93a8-44a4e3d0bc72) **Fig No.05: Arduino UNO setup.** 
-![DO sensor convertor board](https://github.com/user-attachments/assets/72c84e36-f572-4538-9c2f-2fb9a36a9c60) **Fig No.06:DO Sensor Data Convertor board.** 
-![Full DO sensor setup](https://github.com/user-attachments/assets/de28ec89-ef3f-4c62-9e93-9574af4b2fc4) **Fig No.07:DO Sensor Full Setup.**
+![Arduno UNO set up for DO sensor](https://github.com/user-attachments/assets/ec41b42f-2d30-48c6-93a8-44a4e3d0bc72) 	**Fig No.05: Arduino UNO setup.** 
+![DO sensor convertor board](https://github.com/user-attachments/assets/72c84e36-f572-4538-9c2f-2fb9a36a9c60) 	**Fig No.06:DO Sensor Data Convertor board.** 
+![Full DO sensor setup](https://github.com/user-attachments/assets/de28ec89-ef3f-4c62-9e93-9574af4b2fc4)	 **Fig No.07:DO Sensor Full Setup.**
 
 
 [Code for Calibration](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/Calibration%20Code%20for%20DO%20sensor%20(UNO))
@@ -149,7 +149,7 @@ This is just to check that the sensor is working there is no major issue in that
 		• One cup with cold distilled water aprox of 15.C or (less than the hot value).
 		
 First go with either hot or cold water dip the DO sensor prob in that cup of water and start to read the Voltage reading in the serial monitor, give an gentil move movement to avoid the air bubble in prob head and wait until the voltage to be stable and note the value **(Voltage and corresponding Temperature of the water)**.
-![Calibration with UNO](https://github.com/user-attachments/assets/e0ae92eb-1611-4a64-bade-264e7e6daf5a) **Fig No.08:Calibration with UNO.**
+![Calibration with UNO](https://github.com/user-attachments/assets/e0ae92eb-1611-4a64-bade-264e7e6daf5a) 	**Fig No.08:Calibration with UNO.**
 
 **High Temprature**
 **Sample output of Temperature sensor:**	
@@ -236,9 +236,9 @@ After completing the calibration we getting the 4 values, now just replace the v
 		[Code for Verification (Arduino UNO).](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/Calibration%20Code%20for%20DO%20sensor%20(UNO))
 follow the **Step 4** for Pin configuration.	
 ![Sodium Sulphite (Na2So3)](https://github.com/user-attachments/assets/56987988-b7eb-47bf-acf5-3dd7e56b454d)
-**Fig No.09:Sodium Sulphite (Na2So3).**
+	**Fig No.09:Sodium Sulphite (Na2So3).**
 
-![Verification of DO Sensor](https://github.com/user-attachments/assets/3b90b334-ccd4-4c6b-8eba-cc97203fbce0)**Fig No.10:Verification of DO Sensor.**
+![Verification of DO Sensor](https://github.com/user-attachments/assets/3b90b334-ccd4-4c6b-8eba-cc97203fbce0)	**Fig No.10:Verification of DO Sensor.**
 
 **Output for this Aerated state:**
 
@@ -277,7 +277,7 @@ Now using this both create the esp32 code to send the data from esp32 to the sup
 using js get the data from the supabase to the website and display the data in the site.
 
 ![Final Circute(Esp32 + DO Sensor + Temprature Sensor)](https://github.com/user-attachments/assets/be67872c-03ab-4627-9e77-9b19c80e93cd)
-**Fig No.11:Final Circute (Esp32 + DO Sensor + Temprature Sensor).**
+	**Fig No.11:Final Circute (Esp32 + DO Sensor + Temprature Sensor).**
 
 [FULL Esp32 code [Supabase + Temperature Sensor].](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/esp32_code)
 
