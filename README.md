@@ -63,15 +63,19 @@ This Temperature sensor will only work with the help of pull up resistor (4.7K) 
 ![Temp sensor circute](https://github.com/user-attachments/assets/366887ef-cf3a-4381-a87c-2738fa362c51)  **Fig No.03: Temperature Sensor Circute with (4.7K) resistor in ESP32.**
 
 This is to measure the Water temperature.
+	
+**[Temperature Sensor Code (for Esp32)](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/Temp%20Sensor%20Code%20(Esp32))**	
 
-**Sample output:**
-Temperature: 40.00 °C
-Temperature: 40.00 °C
-Temperature: 39.94 °C
-Temperature: 39.94 °C
-Temperature: 39.94 °C
-Temperature: 39.94 °C
-Temperature: 39.94 °C
+**Sample output:**	
+	Temperature: 40.00 °C	
+	Temperature: 40.00 °C	
+	Temperature: 39.94 °C	
+	Temperature: 39.94 °C	
+	Temperature: 39.94 °C	
+	Temperature: 39.94 °C	
+	Temperature: 39.94 °C	
+
+
 
 
 
