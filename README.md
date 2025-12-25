@@ -55,9 +55,9 @@ Adjust the POT Screw **(Potentiometer)** which will controller the Resistance wi
 Setup the Temperature sensor (DS18B20) with Microcontroller (esp32).
 
 **Pin configuration:**   
-•	D4 pin – Data cable (yellow colour).   
-•	3.3V pin – power cable (Red colour).   
-•	GND pin – ground cable (Black colour).   
+	• D4 pin – Data cable (yellow colour).   
+	• 3.3V pin – power cable (Red colour).   
+	• GND pin – ground cable (Black colour).   
 This Temperature sensor will only work with the help of pull up resistor (4.7K) in between 3.3V and D4 pins as shown in the picture.
 
 ![Temp sensor circute](https://github.com/user-attachments/assets/366887ef-cf3a-4381-a87c-2738fa362c51)  **Fig No.03: Temperature Sensor Circute with (4.7K) resistor in ESP32.**
@@ -76,18 +76,72 @@ This is to measure the Water temperature.
 	Temperature: 39.94 °C	
 	Temperature: 39.94 °C	
 
-Step 3: Setup the DO sensor with the Microcontroller (Arduino UNO) for initial calibration.	
+**Step 3:** Making the probe ready for the Calibration/DO reading.
 
-**Pin configuration:**	
-•	A1 Pin – Data cable (Blue colour).	
-•	5V pin – power cable (Red colour).	
-•	GND pin – ground cable (Black colour).	
+**Thing needed:**   
+	• NaOH solution (0.5 mol).   
+	• Distilled water.   
+		
+First make the NaOH solution of 0.5 mol to achieve that take 100 ml of distilled water and add 2 grams of NaOH crystal/Pilets and dissolve it properly,
+this will generate some Heat wait for few minutes to get rid of that heat.
+
+
+Next remove the head of the Probe in the DO sensor with care don’t damage the membrane at the tip it is very sensitive,
+And fill the NaOH solution in that head and screw It back in the prob and clean the outside with the distilled water to get rid of the over flowed NaOH solution and make it dry with tissue paper (don’t touch the tip of the prob).
+
+
+<img width="1057" height="640" alt="prob prepration" src="https://github.com/user-attachments/assets/c45fb067-e7a3-4e59-9b29-5e93f8f1c7d0" /> Fig No.04:Probe Prepration.
+
+Make sure there is no bubble or air pockets in that solution when you close that head.
+
+**Step 4:** Setup the DO sensor with the Microcontroller (Arduino UNO) for initial calibration.	
+
+**Pin configuration:**   
+	• A1 pin – Data cable (Blue colour).   
+	• 5V pin – power cable (Red colour).   
+	• GND pin – ground cable (Black colour). 
+
+
 This DO sensor need min of 5V for proper working and 5.5V in the max limit (handle 3.3 V to 5.5 V) refer the pictures for move understanding.
 
-![Arduno UNO set up for DO sensor](https://github.com/user-attachments/assets/ec41b42f-2d30-48c6-93a8-44a4e3d0bc72) **Fig No.04: Arduino UNO setup.** 
-![DO sensor convertor board](https://github.com/user-attachments/assets/72c84e36-f572-4538-9c2f-2fb9a36a9c60) **Fig No.05:DO Sensor Data Convertor board.** 
+![Arduno UNO set up for DO sensor](https://github.com/user-attachments/assets/ec41b42f-2d30-48c6-93a8-44a4e3d0bc72) **Fig No.05: Arduino UNO setup.** 
+![DO sensor convertor board](https://github.com/user-attachments/assets/72c84e36-f572-4538-9c2f-2fb9a36a9c60) **Fig No.06:DO Sensor Data Convertor board.** 
 
-Code for Calibration
+[Code for Calibration](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/Calibration%20Code%20for%20DO%20sensor%20(UNO))
+
+![Full DO sensor setup](https://github.com/user-attachments/assets/de28ec89-ef3f-4c62-9e93-9574af4b2fc4) **Fig No.07:DO Sensor Full Setup.**
+
+
+Place the Prob in the distilled water and start to take the reading for calibration.
+
+**Sample Output:**	
+
+	raw:	212	Voltage(mv)1035	
+	raw:	211	Voltage(mv)1030
+	raw:	212	Voltage(mv)1035
+	raw:	213	Voltage(mv)1040
+	raw:	291	Voltage(mv)1420
+	raw:	327	Voltage(mv)1596
+	raw:	341	Voltage(mv)1665
+
+**Issues may face and solutions for that Issues:**
+
+1)	We may get Output as:
+
+
+		raw:	0	Voltage(mv)0
+		raw:	0	Voltage(mv)0
+		raw:	0	Voltage(mv)0
+		raw:	0	Voltage(mv)0
+		raw:	0	Voltage(mv)0
+		raw:	0	Voltage(mv)0
+		raw:	0	Voltage(mv)0
+	**Solution:** make sure you Give the Input Voltage of 5V for the DO sensor to avoid this issue.
+
+This is just to check that the sensor is working there is no major issue in that sensor like damage in the electrode and all the next step is the actual calibration will start.
+
+
+
 
 
 
