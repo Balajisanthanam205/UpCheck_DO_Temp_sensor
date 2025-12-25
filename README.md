@@ -106,12 +106,10 @@ This DO sensor need min of 5V for proper working and 5.5V in the max limit (hand
 
 ![Arduno UNO set up for DO sensor](https://github.com/user-attachments/assets/ec41b42f-2d30-48c6-93a8-44a4e3d0bc72) **Fig No.05: Arduino UNO setup.** 
 ![DO sensor convertor board](https://github.com/user-attachments/assets/72c84e36-f572-4538-9c2f-2fb9a36a9c60) **Fig No.06:DO Sensor Data Convertor board.** 
-
-[Code for Calibration](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/Calibration%20Code%20for%20DO%20sensor%20(UNO))
-
 ![Full DO sensor setup](https://github.com/user-attachments/assets/de28ec89-ef3f-4c62-9e93-9574af4b2fc4) **Fig No.07:DO Sensor Full Setup.**
 
 
+[Code for Calibration](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/Calibration%20Code%20for%20DO%20sensor%20(UNO))
 Place the Prob in the distilled water and start to take the reading for calibration.
 
 **Sample Output:**	
@@ -138,10 +136,85 @@ Place the Prob in the distilled water and start to take the reading for calibrat
 		raw:	0	Voltage(mv)0
 	**Solution:** make sure you Give the Input Voltage of 5V for the DO sensor to avoid this issue.
 
-This is just to check that the sensor is working there is no major issue in that sensor like damage in the electrode and all the next step is the actual calibration will start.
+This is just to check that the sensor is working there is no major issue in that sensor like damage in the electrode and all, in the next step only the actual calibration starts.
+
+**Step 5:** Calibration of DO sensor.
+
+**There is Two types of calibration first:**   
+		• Single point calibration (works only of one singe temperature Eg. 25.C).   
+		• Two point calibration (works for any temperature Eg. 15.C, 20.C, 25.C and more).   
+
+**Thing need for Two-point Calibration:**   
+		• One cup with hot distilled water not more that 40.C.   
+		• One cup with cold distilled water aprox of 15.C or (less than the hot value).
+		
+First go with either hot or cold water dip the DO sensor prob in that cup of water and start to read the Voltage reading in the serial monitor, give an gentil move movement to avoid the air bubble in prob head and wait until the voltage to be stable and note the value **(Voltage and corresponding Temperature of the water)**.
 
 
+**High Temprature**
+**Sample output of Temperature sensor:**	
 
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+	Temperature: 34.44 °C
+**sample output for High Temp (DO sensor):**	
+
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+	raw:	154	Voltage(mv)751
+
+**Sample output of Temperature sensor:**	
+
+	Temperature: 14.31 °C
+	Temperature: 14.25 °C
+	Temperature: 14.19 °C
+	Temperature: 14.19 °C
+	Temperature: 14.13 °C
+	Temperature: 14.13 °C
+	Temperature: 14.06 °C
+	Temperature: 14.06 °C
+**sample output for Low Temp:**		
+
+	raw:	95	Voltage(mv)463
+	raw:	95	Voltage(mv)463
+	raw:	95	Voltage(mv)463
+	raw:	95	Voltage(mv)463
+	raw:	95	Voltage(mv)463
+	raw:	95	Voltage(mv)463
+	raw:	95	Voltage(mv)463
+	raw:	95	Voltage(mv)463
+	raw:	95	Voltage(mv)463
+	raw:	95	Voltage(mv)463
+	raw:	95	Voltage(mv)463
+	raw:	95	Voltage(mv)463
+
+
+**As a result of Two-point calibration we got 4-Values**   
+	• HIGH TEMP - 34.   
+	• VOLTAGE VALUE - 751 (mV).   
+	• LOW TEMP - 14. 
+	• VOLTAGE VALUE - 463 (mV).   
 
 
 
