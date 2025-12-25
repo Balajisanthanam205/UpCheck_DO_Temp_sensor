@@ -46,5 +46,22 @@ We constant 5V supply for the DO sensor so we need to set the bug boost converte
 
 First solder the converter with the battery holder in the input end and also solder the output end with two jumpers as shown in the picture. 
 
-![bug boots (full setup)](https://github.com/user-attachments/assets/9f5a81b7-e408-43b5-828f-554007f8f425)
-![bug boots (close up for pin)](https://github.com/user-attachments/assets/22d2e131-9441-4328-aa49-5e60f8d2f778)
+![bug boots (full setup)](https://github.com/user-attachments/assets/9f5a81b7-e408-43b5-828f-554007f8f425)    **Fig No.01: Full Setup.**      
+![bug boots (close up for pin)](https://github.com/user-attachments/assets/22d2e131-9441-4328-aa49-5e60f8d2f778)    **Fig No.02: Pin Setup.**   
+
+Adjust the POT Screw **(Potentiometer)** which will controller the Resistance with the help of Multi meter and screw drive for **(5V)**.
+	
+**Step 2:**
+Setup the Temperature sensor (DS18B20) with Microcontroller (esp32).
+
+**Pin configuration:**   
+•	D4 pin – Data cable (yellow colour).   
+•	3.3V pin – power cable (Red colour).   
+•	GND pin – ground cable (Black colour).   
+This Temperature sensor will only work with the help of pull up resistor (4.7K) in between 3.3V and D4 pins as shown in the picture.
+
+![Temp sensor circute](https://github.com/user-attachments/assets/366887ef-cf3a-4381-a87c-2738fa362c51)  ** Fig No.03: Temperature Sensor Circute with (4.7K) resistor in ESP32.**
+
+This is to measure the Water temperature.
+
+
