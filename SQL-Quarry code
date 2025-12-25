@@ -1,0 +1,26 @@
+-- Create sensor_readings table
+CREATE TABLE sensor_readings (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  temperature FLOAT NOT NULL,
+  dissolved_oxygen FLOAT NOT NULL,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- Create index for faster queries
+CREATE INDEX idx_sensor_readings_created_at ON sensor_readings(created_at DESC);
+
+-- Enable Row Level Security (RLS) for public read/write
+ALTER TABLE sensor_readings ENABLE ROW LEVEL SECURITY;
+
+-- Create policy for public insert
+CREATE POLICY "Allow public insert" ON sensor_readings
+  FOR INSERT WITH CHECK (true);
+
+-- Create policy for public select
+CREATE POLICY "Allow public select" ON sensor_readings
+  FOR SELECT USING (true);
+
+-- Create policy for public delete
+CREATE POLICY "Allow public delete" ON sensor_readings
+  FOR DELETE USING (true);
