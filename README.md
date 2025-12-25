@@ -67,6 +67,7 @@ This is to measure the Water temperature.
 **[Temperature Sensor Code (for Esp32)](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/Temp%20Sensor%20Code%20(Esp32))**	
 
 **Sample output:**	
+
 	Temperature: 40.00 °C	
 	Temperature: 40.00 °C	
 	Temperature: 39.94 °C	
@@ -74,6 +75,21 @@ This is to measure the Water temperature.
 	Temperature: 39.94 °C	
 	Temperature: 39.94 °C	
 	Temperature: 39.94 °C	
+
+Step 3: Setup the DO sensor with the Microcontroller (Arduino UNO) for initial calibration.	
+
+**Pin configuration:**	
+•	A1 Pin – Data cable (Blue colour).	
+•	5V pin – power cable (Red colour).	
+•	GND pin – ground cable (Black colour).	
+This DO sensor need min of 5V for proper working and 5.5V in the max limit (handle 3.3 V to 5.5 V) refer the pictures for move understanding.
+
+![Arduno UNO set up for DO sensor](https://github.com/user-attachments/assets/ec41b42f-2d30-48c6-93a8-44a4e3d0bc72) **Fig No.04: Arduino UNO setup.** 
+![DO sensor convertor board](https://github.com/user-attachments/assets/72c84e36-f572-4538-9c2f-2fb9a36a9c60) **Fig No.05:DO Sensor Data Convertor board.** 
+
+Code for Calibration
+
+
 
 
 
