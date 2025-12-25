@@ -276,7 +276,7 @@ Now using this both create the esp32 code to send the data from esp32 to the sup
 
 using js get the data from the supabase to the website and display the data in the site.
 
-![Final Circute(Esp32 + DO Sensor + Temprature Sensor)](https://github.com/user-attachments/assets/8c865e0f-5225-42f1-9851-ffee74185c11)
+![Verification of DO Sensor](https://github.com/user-attachments/assets/3b90b334-ccd4-4c6b-8eba-cc97203fbce0)**Fig No.11:Final Circute (Esp32 + DO Sensor + Temprature Sensor).**
 
 [FULL Esp32 code [Supabase + Temperature Sensor].](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/esp32_code)
 
