@@ -35,3 +35,5 @@ Web-based visualization
 1) Frontend: HTML, CSS, JavaScript
 2) Backend: Supabase (PostgreSQL + REST API)
 3) Microcontroller Programming: Arduino IDE
+
+**STEP-1**
