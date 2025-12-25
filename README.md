@@ -232,10 +232,11 @@ After completing the calibration we getting the 4 values, now just replace the v
 
 **We can verify the sensor by two ways:**   
 		• First with high DO state (use air pump/mixer aerate the distilled water for 10 to 20 min).   
-		• Second with zero DO state (use NaSo3 chemical – dissolve 0.2 grams for 100ml of water which will consume all the oxygen in the water) wait for 3 to 5 min before you take the readings.
+		• Second with zero DO state (use Na2So3 chemical – dissolve 0.2 grams for 100ml of water which will consume all the oxygen in the water) wait for 3 to 5 min before you take the readings.
 		[Code for Verification (Arduino UNO).](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/Calibration%20Code%20for%20DO%20sensor%20(UNO))
 follow the **Step 4** for Pin configuration.	
-
+![Sodium Sulphite (Na2So3)](https://github.com/user-attachments/assets/56987988-b7eb-47bf-acf5-3dd7e56b454d)
+Fig No.08:Sodium Sulphite (Na2So3).
 
 **Output for this Aerated state:**
 
@@ -259,6 +260,22 @@ follow the **Step 4** for Pin configuration.
 	Temperaturet:	26	ADC RAW:	0	ADC Voltage:	0	DO:	0
 
 It is showing the DO normaly we need to divide it by 1000 to get the DO value in **(mg/L).**
+
+**Step 7:** Integration of supabase with the esp32 and website.
+
+First go the supabase and create New Project and set an name and Password.
+Then in the SQL Editor put the quarry code and run it, you will see the success message in the console.
+
+[SQL Quarry Code.](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/SQL-Quarry%20code)
+
+Then go to the setting and go to Data API and copy the **project URL** and go to API key and go to Legacy anon and copy **Public anon**.
+
+Now using this both create the esp32 code to send the data from esp32 to the supabase through HTTP in WiFi.
+
+using js get the data from the supabase to the website and display the data in the site.
+
+[FULL Esp32 code [Supabase + Temperature Sensor].](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/esp32_code)
+
 
 
 
