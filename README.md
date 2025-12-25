@@ -238,7 +238,7 @@ follow the **Step 4** for Pin configuration.
 ![Sodium Sulphite (Na2So3)](https://github.com/user-attachments/assets/56987988-b7eb-47bf-acf5-3dd7e56b454d)
 **Fig No.09:Sodium Sulphite (Na2So3).**
 
-![Verification of DO Sensor](https://github.com/user-attachments/assets/62756429-5dcf-4d63-8596-a14f3aff1ff3)**Fig No.10:Verification of DO Sensor.**
+![Verification of DO Sensor](https://github.com/user-attachments/assets/3b90b334-ccd4-4c6b-8eba-cc97203fbce0)**Fig No.10:Verification of DO Sensor.**
 
 **Output for this Aerated state:**
 
@@ -276,7 +276,8 @@ Now using this both create the esp32 code to send the data from esp32 to the sup
 
 using js get the data from the supabase to the website and display the data in the site.
 
-![Verification of DO Sensor](https://github.com/user-attachments/assets/3b90b334-ccd4-4c6b-8eba-cc97203fbce0)**Fig No.11:Final Circute (Esp32 + DO Sensor + Temprature Sensor).**
+![Final Circute(Esp32 + DO Sensor + Temprature Sensor)](https://github.com/user-attachments/assets/be67872c-03ab-4627-9e77-9b19c80e93cd)
+**Fig No.11:Final Circute (Esp32 + DO Sensor + Temprature Sensor).**
 
 [FULL Esp32 code [Supabase + Temperature Sensor].](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/esp32_code)
 
