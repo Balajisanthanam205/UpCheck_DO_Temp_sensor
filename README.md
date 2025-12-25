@@ -37,7 +37,7 @@ A web-based dashboard built with HTML, CSS, and JavaScript retrieves and display
 3) Microcontroller Programming: Arduino IDE
 
 **STEP-1**
-We constant 5V supply for the DO sensor so we need to set the bug boost converter in this case we used
+We need an constant 5V supply for the DO sensor so we need to set the bug boost converter in this case we used
 
 •	2-Lithiom iron battery.   
 •	battery holder.   
@@ -60,8 +60,18 @@ Setup the Temperature sensor (DS18B20) with Microcontroller (esp32).
 •	GND pin – ground cable (Black colour).   
 This Temperature sensor will only work with the help of pull up resistor (4.7K) in between 3.3V and D4 pins as shown in the picture.
 
-![Temp sensor circute](https://github.com/user-attachments/assets/366887ef-cf3a-4381-a87c-2738fa362c51)  ** Fig No.03: Temperature Sensor Circute with (4.7K) resistor in ESP32.**
+![Temp sensor circute](https://github.com/user-attachments/assets/366887ef-cf3a-4381-a87c-2738fa362c51)  **Fig No.03: Temperature Sensor Circute with (4.7K) resistor in ESP32.**
 
 This is to measure the Water temperature.
+
+**Sample output:**
+Temperature: 40.00 °C
+Temperature: 40.00 °C
+Temperature: 39.94 °C
+Temperature: 39.94 °C
+Temperature: 39.94 °C
+Temperature: 39.94 °C
+Temperature: 39.94 °C
+
 
 
