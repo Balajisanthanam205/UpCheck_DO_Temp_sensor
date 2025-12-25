@@ -276,6 +276,8 @@ using js get the data from the supabase to the website and display the data in t
 
 [FULL Esp32 code [Supabase + Temperature Sensor].](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/esp32_code)
 
+[FULL Website code [With Supabase integration]](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/index.html)
+
 
 
 
