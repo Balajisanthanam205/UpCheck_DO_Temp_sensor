@@ -149,7 +149,7 @@ This is just to check that the sensor is working there is no major issue in that
 		• One cup with cold distilled water aprox of 15.C or (less than the hot value).
 		
 First go with either hot or cold water dip the DO sensor prob in that cup of water and start to read the Voltage reading in the serial monitor, give an gentil move movement to avoid the air bubble in prob head and wait until the voltage to be stable and note the value **(Voltage and corresponding Temperature of the water)**.
-
+![Calibration with UNO](https://github.com/user-attachments/assets/e0ae92eb-1611-4a64-bade-264e7e6daf5a) **Fig No.08:Calibration with UNO.**
 
 **High Temprature**
 **Sample output of Temperature sensor:**	
@@ -236,7 +236,9 @@ After completing the calibration we getting the 4 values, now just replace the v
 		[Code for Verification (Arduino UNO).](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/Calibration%20Code%20for%20DO%20sensor%20(UNO))
 follow the **Step 4** for Pin configuration.	
 ![Sodium Sulphite (Na2So3)](https://github.com/user-attachments/assets/56987988-b7eb-47bf-acf5-3dd7e56b454d)
-Fig No.08:Sodium Sulphite (Na2So3).
+**Fig No.09:Sodium Sulphite (Na2So3).**
+
+![Verification of DO Sensor](https://github.com/user-attachments/assets/62756429-5dcf-4d63-8596-a14f3aff1ff3)**Fig No.10:Verification of DO Sensor.**
 
 **Output for this Aerated state:**
 
@@ -273,6 +275,8 @@ Then go to the setting and go to Data API and copy the **project URL** and go to
 Now using this both create the esp32 code to send the data from esp32 to the supabase through HTTP in WiFi.
 
 using js get the data from the supabase to the website and display the data in the site.
+
+![Final Circute(Esp32 + DO Sensor + Temprature Sensor)](https://github.com/user-attachments/assets/8c865e0f-5225-42f1-9851-ffee74185c11)
 
 [FULL Esp32 code [Supabase + Temperature Sensor].](https://github.com/Balajisanthanam205/UpCheck_DO_Temp_sensor/blob/main/esp32_code)
 
