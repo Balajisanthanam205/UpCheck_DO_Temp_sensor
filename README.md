@@ -39,9 +39,9 @@ A web-based dashboard built with HTML, CSS, and JavaScript retrieves and display
 **STEP-1**
 We constant 5V supply for the DO sensor so we need to set the bug boost converter in this case we used
 
-•	2-Lithiom iron battery.
-•	battery holder.
-•	converter.
+•	2-Lithiom iron battery.   
+•	battery holder.   
+•	converter.   
 •	some jumpers.
 
 First solder the converter with the battery holder in the input end and also solder the output end with two jumpers as shown in the picture. 
